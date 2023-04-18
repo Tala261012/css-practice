@@ -1,0 +1,42 @@
+/* -----------------------------  Lesson 2  --------------------------------- */
+
+li:first-child {
+  color:blue
+}
+
+.item {
+  color: green
+}
+
+.item:first-child {
+  color: rgb(2, 201, 2);
+}
+
+.item:last-child {
+  color: rgb(104, 34, 196);
+}
+
+.item:only-child {
+  color: rgb(57, 75, 243);
+}
+
+p:first-of-type {
+  color:rgb(196, 34, 69)
+}
+
+.item2:first-of-type {
+  color:coral;
+}
+
+.item:nth-last-of-type(2) {
+  color:rgb(199, 233, 9);
+}
+
+p:empty {
+  height: 10px;
+  background: grey;
+}
+
+.card-dark {
+  background: rgb(238, 238, 238);
+}

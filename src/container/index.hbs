@@ -1,15 +1,163 @@
-{{!-- 
-Це код container файлу для index сторінки, 
-в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
- --}}
+<main class="p-5">
 
-<div class="p-5">
-    <h1>USB хаб Type C 12 в 1 HDMI VGA AUX 3.5 mm</h1>
+	<div class="card p-5">
+		<p>
+			Hello World! Hex-format.
+		</p>
 
-    <button type="button" class="btn btn-primary">Купити</button>
-</div>
+		<p>
+			<b>RGB-format.</b>
+		</p>
 
-{{!-- 
-    Цей код містить лише те, що буде виводитись в <body>
-    Адже наш layout/default.hbs має вже структуру HTML
---}}
+		<p>
+			<b>RGBA-format. 1 - т. е. совсем НЕпрозрачный, 0 - прозрачный</b> <br>
+			Если есть позрачность, то цвет фона будет влиять!. См. ниже.
+		</p>
+
+		<div class="myalfa mb-3">
+			<b>Фон желтый, буквы синие. Прозрачность 0,3.</b>
+		</div>
+
+		<p>
+			<b>HSLA-format. Оттенок (0-360), насыщенность (0%-100%), яркость (0%-100%)</b>
+			<br>
+			hsla(360, 100%, 33%, 0.71)
+		</p>
+	</div>
+
+	<div class="card p-5 mt-5">
+		<h1 class="mystroke mb-3">Text-Fill-Color and Text-Stroke</h1>
+		<p>Text direction!!!</p>
+		<p id="init">initial значение свойства</p>
+		<div class="test">
+			<p>inherit значение свойства, violet</p>
+		</div>
+	</div>
+
+	<div class="card p-5 mt-5">
+		<p class="vert mb-0">Вертикальное выравнивание</p>
+	</div>
+
+	<div>
+		<p class="goriz mb-0">Горизонтальное выравнивание</p>
+		<div class="goriz mb-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet expedita dolorem
+			velit
+			dolor consequatur reiciendis quaerat, nobis voluptatum corrupti molestias magnam non quisquam fugit est modi
+			iste quod sapiente, quo animi, adipisci hic. Neque voluptates vel repudiandae esse a nulla saepe qui
+			voluptatum aspernatur repellendus animi nisi dolor fugiat, deleniti eos eaque ratione repellat quod
+			recusandae dicta, atque provident iusto dolore. Quisquam officia ut quae sunt, libero excepturi mollitia.
+			Rerum tenetur ut aut, odit repellendus quos asperiores. Incidunt vitae harum veritatis neque culpa sed quia
+			asperiores reprehenderit porro, expedita sapiente aut voluptas illo eum reiciendis, ipsam ex quos fugiat
+			fuga sit autem? Delectus facere deleniti modi architecto dolore, neque incidunt tenetur beatae? Consectetur
+			nobis fugit, doloribus fuga quae, sequi facere dicta modi suscipit unde incidunt dolor voluptate. Magni
+			quasi cumque facere iste optio, voluptatibus, dolorem non saepe ducimus, architecto laudantium ipsum labore
+			molestiae fuga. Dolorum enim iusto hic facere! Quisquam, beatae debitis fugit cum maxime, soluta odit a
+			illum dolorum ipsa velit, mollitia sit aspernatur voluptate magni repudiandae. Blanditiis quam libero quod
+			exercitationem! Quas voluptatum asperiores fuga aut dolore distinctio aliquid nisi necessitatibus ut in
+			iusto dignissimos nam, non eligendi quae, at doloremque dolores pariatur dolorem debitis expedita ipsum
+			adipisci.</div>
+		<pre class="mt-3 mytabs">Табуляции	Табуляции	Табуляции	Табуляции	
+Табуляции	  Табуляции	  Табуляции 	 Табуляции	 
+Табуляции	 Табуляции	 Табуляции	 Табуляции	 
+Табуляции	 Табуляции	 Табуляции	 Табуляции	 
+Табуляции	 Табуляции	 Табуляции	 Табуляции	
+Табуляции	 Табуляции	 Табуляции	 Табуляции	 
+Табуляции	 Табуляции	 Табуляции	 Табуляции	 
+Табуляции	 Табуляции	 Табуляции	 Табуляции
+		</pre>
+		<span class="mt-3 mytd">
+			Text-decoration
+		</span>
+	</div>
+
+	{{!-- --------------------------------- Урок 2 Все о шрифтах --------------------------------- --}}
+
+	<section>
+		<h1 class="mt-5">Все о шрифтах</h1>
+
+		<div class="card p-5 mt-5">
+			<h6>Размеры шрифтов, адаптивные или относительные</h6>
+			<p class="font1">xx-small</p>
+			<p class="font2">x-small</p>
+			<p class="font3">smaller, относительный</p>
+			<p class="font4">small</p>
+			<p class="font5">medium</p>
+			<p class="font6">large</p>
+			<p class="font7">larger, относительный</p>
+			<p class="font8">x-large</p>
+			<p class="font9">xx-large</p>
+
+			<br>
+			<h5>Жирность</h5>
+			<p> Сравним 200 и 300</p>
+			<p> <span style="font-weight: 200;">font 200</span> and <span style="font-weight: 300;">font 300</span> </p>
+			<p> Сравним 600 и 800</p>
+			<p> <span style="font-weight: 600;">font 600</span> and <span style="font-weight: 800;">font 800</span> </p>
+			<p>Нужно смотреть в link, если шрифты с какой-то жирностью не загружены, то их и не будет!!!</p>
+			<p style="font-weight:bolder;">Bolder</p>
+			<p style="font-weight:lighter;">Lighter</p>
+
+			<br>
+			<h5>Курсив</h5>
+			<p style="font-style: normal;">Normal</p>
+			<p style="font-style: oblique;">Oblique</p>
+			<p style="font-style: italic;">Italic</p>
+			<br>
+			<p class="myitalic" style="font-style: normal;"> Normal</p>
+			<p class="myitalic" style="font-style: oblique;">Oblique</p>
+			<p class="myitalic" style="font-style: italic;">Italic</p>
+		</div>
+
+	</section>
+
+	<section>
+		<div class="card p-5 mt-5">
+			<p><span class="emph">E</span>mphasis</p>
+			<p>Удар<span class="emph">е</span>ние</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aut fuga iure tenetur
+				facilis
+				aspernatur odit esse, eum recusandae provident libero, unde numquam quibusdam adipisci doloremque!
+				Soluta repellendus beatae n<span class="emph">е</span>atus voluptatum expedita quas, dicta, omnis sint
+				modi facilis praesentium
+				fugit recusandae adipisci enim quasi maiores ipsa nesciunt? Dolorem facere nobis, delectus eaque
+				eligendi numquam unde, doloremque odit est aperiam recusandae. Facere debitis illo saepe quasi officia,
+				vero voluptates non velit obcaecati expedita quaerat consequuntur eum error beatae iste unde earum
+				voluptate. Eaque pariatur placeat quidem labore minus eligendi, suscipit deserunt voluptate esse
+				aspernatur praesentium nihil dolorem cum veritatis possimus sunt?</p>
+			<p> <span style="font-variant-position: super;">Test</span> Test</p>
+		</div>
+	</section>
+
+	<section>
+		<h1 class="mt-5">Блочные элементы</h1>
+		<div class="card p-5 mt-5">
+			<div class="nevidimiy">Invisible div</div>
+			<div>Block</div>
+			<div>Block</div>
+			<div class="myblock">Block 10%</div>
+			<div>Block</div>
+			<div>Block</div>
+			<span>Word</span>
+			<span>Word</span>
+			<span>Странно, что спан ведет себя как блок 8-(((</span>
+			<span>Он это унаследовал от div class = card</span>
+			<span>Word</span>
+			<span>Word</span>
+		</div>
+		<span>Word</span>
+		<span>Word</span>
+		<span>Странно, что спан ведет себя как блок 8-(((</span>
+		<span>Тут все нормально</span>
+		<span class="myblock">Several Words about nothing</span>
+		<span>Word</span>
+		<div class="mt-5">
+			<h5>Margin Auto</h5>
+			<span>word</span>
+			<span>word</span>
+			<span>word</span>
+			<span>word</span>
+		</div>
+
+	</section>
+
+</main>

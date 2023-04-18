@@ -1,0 +1,266 @@
+/* -----------------------------  Lesson 1  ---------------------------------- */
+/* :root {
+  background: lightpink;
+ }
+
+html {
+  max-width: 720px;
+
+  background: lightblue;
+}
+
+body {
+  background: lightblue;
+}
+ 
+* {
+  color: red;
+}
+
+h1{
+  color: blue;
+}
+
+.box {
+  color:darkslateblue;
+  background: rgb(230, 233, 204);
+}
+
+#user5, footer > p {
+  color:rgb(2, 92, 62)
+}
+
+h6#user6 {
+  color:darkblue;
+}
+
+.bgrnd {
+  background:rgb(212, 250, 211);
+}
+
+.bgrnd > p {
+  color:darkgreen;
+}
+
+h3 + p {
+  color: black;
+}
+
+h2 ~ p {
+  color:rgb(88, 14, 156);
+}
+
+h2 ~ div > p.rudiy {
+  color:rgb(192, 106, 8)
+}
+
+*/
+
+/* -----------------------------  Lesson 2  --------------------------------- */
+
+/* li:first-child {
+  color:blue
+}
+
+.item {
+  color: green
+}
+
+.item:first-child {
+  color: rgb(2, 201, 2);
+}
+
+.item:last-child {
+  color: rgb(104, 34, 196);
+}
+
+.item:only-child {
+  color: rgb(57, 75, 243);
+}
+
+p:first-of-type {
+  color:rgb(196, 34, 69)
+}
+
+.item2:first-of-type {
+  color:coral;
+}
+
+.item:nth-last-of-type(2) {
+  color:rgb(199, 233, 9);
+}
+
+p:empty {
+  height: 10px;
+  background: grey;
+} */
+
+.card-dark {
+  background: rgb(238, 238, 238);
+}
+
+/* ---------------------------  Lesson 3  Селекторы 3  ---------------------------- */
+
+/* .input-dark {
+  background: rgb(160, 161, 161);
+}
+
+.input-dark[required] {
+  background: rgb(253, 120, 209);
+}
+
+.input-dark[type="number"] {
+  background: rgb(156, 233, 137);
+}
+
+.small-img[alt~="small"] {
+  height: 250px;
+}
+
+.card.img {
+  height: 350px;
+}
+
+.card[class~="img2"] {
+  height: 350px;
+}
+
+a[rel~="external"] {
+  color: rgb(252, 103, 128);
+}
+
+button[class|="btn"] {
+  background: lightblue;
+}
+
+a[class$="btn"] {
+  color:chartreuse;
+  background: rgb(4, 93, 122);
+}
+
+.btn::first-letter {
+  color: red;
+}
+ё
+.big-text::first-line {
+  color: rgb(236, 9, 58);
+}
+
+.input-dark::placeholder {
+  color:darkmagenta;
+}
+
+.big-text::before,
+.big-text::after {
+  content: "$$$ ";
+  color:rgb(10, 175, 74);
+  background:rgb(156, 233, 137)
+} */
+/* ---------------------------  Lesson 4  Селекторы 4  ---------------------------- */
+#test:target {
+  color: red;
+}
+
+.mylink:link {
+  color: red;
+}
+
+.mylink:hover {
+  color: green;
+}
+
+.card:hover {
+  background: rgb(171, 243, 189);
+}
+
+.mylink:active {
+  color: rgb(247, 103, 20);
+}
+
+.card:active {
+  background: rgb(73, 240, 115);
+}
+
+input {
+  background-color: rgb(196, 195, 194);
+}
+
+input:focus {
+  background-color: #ffffff;
+}
+
+.card:focus-within {
+  background: gray;
+}
+
+.card:lang(en) {
+  background: rgb(148, 148, 240);
+}
+
+.card:lang(en) > span::after {
+  content: " (en)";
+}
+
+.card:lang(fr) > span::after {
+  content: " (fr)";
+}
+
+button {
+  background-color: rgb(165, 224, 226);
+}
+
+button:enabled {
+  background-color: rgb(35, 208, 214);
+}
+
+button:disabled {
+  background-color: rgb(158, 180, 180);
+}
+
+.inp:read-write {
+  background-color: chartreuse;
+}
+
+.inp:read-only {
+  background-color: rgb(212, 235, 190);
+}
+
+input[type="checkbox"] ~ span {
+  color: rgb(47, 170, 211);
+}
+
+input[type="checkbox"]:checked ~ span {
+  color: rgb(13, 35, 233);
+}
+
+.valid:valid {
+  background: greenyellow;
+}
+
+.valid:invalid {
+  background: rgb(247, 198, 66);
+}
+
+.valid:optional {
+  background: rgb(66, 235, 247);
+}
+
+.number:out-of-range {
+  background: rgb(243, 153, 101);
+}
+
+.number:in-range {
+  background: rgb(182, 253, 193);
+}
+
+.number:invalid {
+  background: rgb(243, 153, 101);
+}
+
+.mytext::placeholder {
+  color: white;
+}
+
+.mytext:placeholder-shown ~ span {
+  color: rgb(236, 91, 91);
+}

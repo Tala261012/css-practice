@@ -1,7 +1,110 @@
-html {
-  max-width: 720px;
+.card > p:first-child {
+	color: #214489;
+}
+.card > p:nth-child(2) {
+	color: rgb(255, 102, 0);
+}
+.card > p:nth-child(3) {
+	color: rgba(255, 102, 0, 0.521);
+}
+.myalfa {
+	background-color: yellow;
+	color: rgba(0, 0, 255, 0.3);
+}
+.card > p:nth-child(5) {
+	color: hsla(360, 100%, 33%, 0.71);
+}
+.mystroke {
+	color:green;
+	-webkit-text-fill-color: aqua;
+	-webkit-text-stroke: 2px blue;
+}
+.mystroke:hover {
+	color:green;
+	-webkit-text-fill-color: rgb(0, 255, 34);
+	-webkit-text-stroke: 2px rgb(6, 94, 75);
+}
+.mystroke:active {
+	-webkit-text-fill-color: rgb(255, 251, 0);
+}
+.mystroke+p:hover {
+	direction: rtl;
+}
+#init {
+	color: initial;
+}
+.test {
+	color: violet;
+}
+.test>p {
+	color:blue;
+	color: inherit;
+}
+.vert {
+	writing-mode: vertical-lr;
+}
+.goriz {
+	text-align:justify;
+	text-transform: capitalize;
+}
+.mytabs {
+	tab-size: 24;
+	letter-spacing: 5px;
+
+}
+.mytd {
+	text-decoration: underline dotted red;
 }
 
-body {
-  background: #fff;
+/* ------------------------- Урок 2  Все о шрифтах ------------------------- */
+* {
+	font-family: "Roboto", sans-serif;
+	font-display: swap;
+}
+.font1 {
+	font-size: xx-small;
+}
+.font2 {
+	font-size: x-small;
+}
+.font3 {
+	font-size: smaller;
+}
+.font4 {
+	font-size: small;
+}
+.font5 {
+	font-size: medium;
+}
+.font6 {
+	font-size: large;
+}
+.font7 {
+	font-size: larger;
+}
+.font8 {
+	font-size: x-large;
+}
+.font9 {
+	font-size: xx-large;
+}
+
+.myitalic {
+	font-family: serif;
+}
+.emph {
+	text-emphasis: sesame red;
+}
+.nevidimiy {
+	display: none;
+}
+.myblock {
+	display: block;
+	margin:50px 0;
+	background-color: grey;
+	width: 80%;
+	padding: 5%;
+	max-width:800px;
+	min-width: 200px;
+	
 }

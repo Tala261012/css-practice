@@ -1,0 +1,58 @@
+/* -----------------------------  Lesson 1  ---------------------------------- */
+:root {
+  background: lightpink;
+ }
+
+html {
+  max-width: 720px;
+
+  background: lightblue;
+}
+
+body {
+  background: lightblue;
+}
+ 
+* {
+  color: red;
+}
+
+h1{
+  color: blue;
+}
+
+.box {
+  color:darkslateblue;
+  background: rgb(230, 233, 204);
+}
+
+#user5, footer > p {
+  color:rgb(2, 92, 62)
+}
+
+h6#user6 {
+  color:darkblue;
+}
+
+.bgrnd {
+  background:rgb(212, 250, 211);
+}
+
+.bgrnd > p {
+  color:darkgreen;
+}
+
+h3 + p {
+  color: black;
+}
+
+h2 ~ p {
+  color:rgb(88, 14, 156);
+}
+
+h2 ~ div > p.rudiy {
+  color:rgb(192, 106, 8)
+}
+
+
+

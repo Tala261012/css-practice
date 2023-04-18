@@ -1,0 +1,84 @@
+{{!--
+Це код container файлу для index сторінки,
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+--}}
+
+{{!-- --------------------------- Lesson 4 Селекторы 4 ---------------------------- --}}
+<div class="card m-5 p-3 card-dark">
+	<a href="#test">Ссылка на якорь</a>
+</div>
+
+<div id="test" class="card m-5 p-3 card-dark">
+	Якорь!!!
+</div>
+
+<div class="card m-5 p-3 card-dark">
+	<a class="mylink" href="https://fast.com/" target="_blank">google</a>
+</div>
+
+<div class="card m-5 p-3 card-dark">
+	<input type="text">
+</div>
+
+<div lang="en" class="card m-5 p-3 card-dark">
+	<span>Hello world!</span>
+	<input type="text" placeholder="english">
+</div>
+<div lang="fr" class="card m-5 p-3 card-dark">
+	<span>Bonjour!</span>
+	<input type="text" placeholder="franch">
+</div>
+
+<div class="m-5 p-3 card-dark text-center">
+	<button>Enabled button</button><br><br>
+	<button disabled>Disabed button</button>
+</div>
+
+<div class="m-5 p-3 card-dark text-center">
+	<input class="inp" type="text">
+	<input class="inp" type="text" readonly>
+</div>
+
+<div class="m-5 p-3 card-dark">
+	<div>
+		<input type="checkbox">
+		<span>First chekbox</span>
+	</div>
+	<div>
+		<input type="checkbox">
+		<span>Second chekbox</span>
+	</div>
+	<div>
+		<input type="checkbox">
+		<span>Third chekbox</span>
+	</div>
+	<div>
+		<input type="checkbox" disabled checked>
+		<span>Fourth chekbox</span>
+	</div>
+</div>
+
+<div class="m-5 p-3 card-dark text-center">
+	<span>Mail:</span>
+	<input class="valid" type="email" required>
+	<input class="valid" type="number">
+	<span>-number (optional)</span>
+</div>
+
+<div class="m-5 p-3 card-dark">
+	<div>
+		<input class="number" type="number" step="5" min="20" max="40" required>
+		<span>-number (required, 20-40)</span>
+	</div>
+	<div class="mt-2">
+		<input class="mytext" type="text" placeholder="Write letters">
+		<span>-атрибут наличия плейсхолдера, пока текст не введен, текст красный</span>
+	</div>
+</div>
+
+<footer class="p-5">
+	<hr>
+	<p>
+		Это футер
+	</p>
+</footer>

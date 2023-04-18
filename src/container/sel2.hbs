@@ -1,0 +1,118 @@
+{{!--
+Це код container файлу для index сторінки,
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+--}}
+
+{{! ------------------------------ Lesson 2 -------------------------------}}
+
+<div class="p-5">
+	<h1>Селекторы, часть 2</h1>
+	<h2> Селектор первого ребенка ниже</h2>
+
+	<div class="card mt-5 p-3 card-dark">
+		через тег
+		<ol>
+			<li>
+				Item 1
+			</li>
+			<li>
+				Item 1
+			</li>
+			<li>
+				Item 1
+			</li>
+		</ol>
+	</div>
+
+	<div class="card mt-5 p-3 card-dark">
+		через класс (дает зеленый), а первый ребенок с классом item - светло-зеленый
+		<ol>
+			<div class="item"> Test </div>
+			<li class="item">
+				List-Item 1
+			</li>
+			<li class="item">
+				List-Item 2
+			</li>
+			<li class="item">
+				List-Item 3
+			</li>
+		</ol>
+	</div>
+
+	<h2 class="mt-5"> Селектор последнего ребенка ниже</h2>
+
+	<div class="card mt-3 p-3 card-dark">
+		через класс (дает зеленый), а первый ребенок с классом item - светло-зеленый, последний - фиолетовый.
+		<ol>
+			<div class="item"> Test </div>
+			<li class="item">
+				List-Item 1
+			</li>
+			<li class="item">
+				List-Item 2
+			</li>
+			<li class="item">
+				List-Item 3
+			</li>
+		</ol>
+	</div>
+
+	<h2 class="mt-5"> Селектор единственного ребенка ниже</h2>
+	<div class="card mt-3 p-3 card-dark">
+		голубой
+		<ol>
+			<li class="item">
+				List-Item 1
+			</li>
+			К тексту без тега это не относится!
+		</ol>
+	</div>
+
+	<h2 class="mt-5"> Селектор первого типа</h2>
+	<div class="card mt-3 p-3 card-dark">
+
+		<div class="item">
+			test, превый ребенок с классом item
+		</div>
+		<p class="item"> Первый абзац. Селектор первого типа. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			Provident, impedit.</p>
+		<p class="item"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, impedit.</p>
+		<p class="item"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, impedit.</p>
+		<p class="item"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, impedit.</p>
+		<p class="item"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, impedit.</p>
+
+		<h3>забавный пример, в которм все- превые с новым классом item2</h3>
+		<div>
+			<div class="item2">ertgjertj</div>
+			<p class="item2">Lorem ipsum dolor sit amet.</p>
+			<strong class="item2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong>
+		</div>
+	</div>
+
+	<h2 class="mt-5"> Селектор последнего типа</h2>
+	<h2 class="mt-5"> Селектор единичного типа</h2>
+	<h2 class="mt-5"> Селектор ребенка (child) с порядковым номером 8</h2>
+	<div class="ps-5">
+		<div class="item">ertgjertj</div>
+		<p class="item">Lorem ipsum dolor sit amet.</p>
+		<strong class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong>
+		<div class="item">ertgjertj</div>
+		<p class="item">Lorem ipsum dolor sit amet.</p>
+		<strong class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong>
+		<div class="item">ertgjertj</div>
+		<p></p>
+		<p class="item">Lorem ipsum dolor sit amet.</p>
+		<strong class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong>
+		<div class="item">ertgjertj</div>
+		<p class="item">Lorem ipsum dolor sit amet.</p>
+		<strong class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong>
+		<div class="item">ertgjertj</div>
+		<p class="item">Lorem ipsum dolor sit amet.</p>
+		<strong class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong>
+		<div class="item">ertgjertj</div>
+		<p class="item">Lorem ipsum dolor sit amet.</p>
+		<strong class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong>
+
+	</div>
+</div>

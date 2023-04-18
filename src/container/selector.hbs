@@ -1,0 +1,333 @@
+{{!--
+Це код container файлу для index сторінки,
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+--}}
+
+{{! ------------------------------ Lesson 1 -------------------------------}}
+{{!-- <div class="p-5">
+	<h1>Селекторы, часть 1</h1>
+
+	<button type="button" class="btn btn-primary">Купити</button>
+
+	<p class=" mt-3">
+		Simple text for testing
+	</p>
+	<p class=" mt-3 box">
+		Simple text for testing
+	</p>
+	<p class=" mt-3">
+		Simple text for testing
+	</p>
+	<p class=" mt-3">
+		Simple text for testing
+	</p>
+	<p id="user5" class=" mt-3">
+		Simple text for testing
+	</p>
+	<p class=" mt-3">
+		Simple text for testing
+	</p>
+	<h6>Heading</h6>
+	<h6 id="user6">Heading</h6>
+	<p class=" mt-3">
+		Simple text for testing</p>
+	<p class=" mt-3">
+		Simple text for testing</p>
+	<div class="bgrnd">
+		Simple text for testing
+		<ul type="square">
+			<li>one</li>
+			<li>two</li>
+		</ul>
+		<p>Еще один тест</p>
+
+	</div>
+	<div>
+		<h3>Сестринский селектор</h3>
+		<p>Почернеет только превый абзац. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem quasi ut
+			architecto aspernatur facilis
+			minus voluptatum ipsam iusto rem provident.</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur accusamus nobis quae!</p>
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem quasi ut architecto aspernatur facilis
+			minus voluptatum ipsam iusto rem provident.</p>
+	</div>
+
+</div>
+
+<div class="p-5">
+	<h2> Соседский селектор</h2>
+	<strong> Это важно</strong> <br>
+	<em>Главное, чтоб на одном уровне</em>
+	<p>Это сеседский абзац, фиолетовый, на одном уровне с h2 </p>
+	<div>
+		<p>
+			Этот абзац вложен в див, он снова красный. Вложенный - значит не соседский.
+		</p>
+	</div>
+</div>
+
+<div class="p-5">
+	<h2> Эксперимент </h2>
+	<strong> Хочу добраться</strong> <br>
+	<em>к абзацу внутри дива через h2, который красный в прошлом примере.</em>
+	<p> Будет рыжим цветом. А этот - фиолетовый.</p>
+	<div>
+		<p class="rudiy">
+			Этот абзац вложен в див, он снова красный. Вложенный - значит не соседский.
+		</p>
+	</div>
+</div>
+
+<hr> --}}
+
+{{! ------------------------------ Lesson 2 -------------------------------}}
+
+{{!-- <div class="p-5">
+	<h1>Селекторы, часть 2</h1>
+	<h2> Селектор первого ребенка ниже</h2>
+
+	<div class="card mt-5 p-3 card-dark">
+		через тег
+		<ol>
+			<li>
+				Item 1
+			</li>
+			<li>
+				Item 1
+			</li>
+			<li>
+				Item 1
+			</li>
+		</ol>
+	</div>
+
+	<div class="card mt-5 p-3 card-dark">
+		через класс (дает зеленый), а первый ребенок с классом item - светло-зеленый
+		<ol>
+			<div class="item"> Test </div>
+			<li class="item">
+				List-Item 1
+			</li>
+			<li class="item">
+				List-Item 2
+			</li>
+			<li class="item">
+				List-Item 3
+			</li>
+		</ol>
+	</div>
+
+	<h2 class="mt-5"> Селектор последнего ребенка ниже</h2>
+
+	<div class="card mt-3 p-3 card-dark">
+		через класс (дает зеленый), а первый ребенок с классом item - светло-зеленый, последний - фиолетовый.
+		<ol>
+			<div class="item"> Test </div>
+			<li class="item">
+				List-Item 1
+			</li>
+			<li class="item">
+				List-Item 2
+			</li>
+			<li class="item">
+				List-Item 3
+			</li>
+		</ol>
+	</div>
+
+	<h2 class="mt-5"> Селектор единственного ребенка ниже</h2>
+	<div class="card mt-3 p-3 card-dark">
+		голубой
+		<ol>
+			<li class="item">
+				List-Item 1
+			</li>
+			К тексту без тега это не относится!
+		</ol>
+	</div>
+
+	<h2 class="mt-5"> Селектор первого типа</h2>
+	<div class="card mt-3 p-3 card-dark">
+
+		<div class="item">
+			test, превый ребенок с классом item
+		</div>
+		<p class="item"> Первый абзац. Селектор первого типа. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+			Provident, impedit.</p>
+		<p class="item"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, impedit.</p>
+		<p class="item"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, impedit.</p>
+		<p class="item"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, impedit.</p>
+		<p class="item"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, impedit.</p>
+
+		<h3>забавный пример, в которм все- превые с новым классом item2</h3>
+		<div>
+			<div class="item2">ertgjertj</div>
+			<p class="item2">Lorem ipsum dolor sit amet.</p>
+			<strong class="item2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong>
+		</div>
+	</div>
+
+	<h2 class="mt-5"> Селектор последнего типа</h2>
+	<h2 class="mt-5"> Селектор единичного типа</h2>
+	<h2 class="mt-5"> Селектор ребенка (child) с порядковым номером 8</h2>
+	<div class="ps-5">
+		<div class="item">ertgjertj</div>
+		<p class="item">Lorem ipsum dolor sit amet.</p>
+		<strong class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong>
+		<div class="item">ertgjertj</div>
+		<p class="item">Lorem ipsum dolor sit amet.</p>
+		<strong class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong>
+		<div class="item">ertgjertj</div>
+		<p></p>
+		<p class="item">Lorem ipsum dolor sit amet.</p>
+		<strong class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong>
+		<div class="item">ertgjertj</div>
+		<p class="item">Lorem ipsum dolor sit amet.</p>
+		<strong class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong>
+		<div class="item">ertgjertj</div>
+		<p class="item">Lorem ipsum dolor sit amet.</p>
+		<strong class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong>
+		<div class="item">ertgjertj</div>
+		<p class="item">Lorem ipsum dolor sit amet.</p>
+		<strong class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong>
+
+	</div>
+</div> --}}
+
+{{! ------------------------------ Lesson 3 Селекторы 3 ----------------------------------}}
+
+{{!-- <div class="card m-5 p-3 card-dark">
+	<div>
+		<input type="text" class="input-dark">
+		<div>просто инпут</div>
+	</div>
+	<div>
+		<input type="text" required class="mt-3 input-dark">
+		<div>с атрибутом required</div>
+	</div>
+	<div>
+		<input type="number" class=" mt-3 input-dark">
+		<div>type=number</div>
+	</div>
+</div>
+
+<div class="card m-5 p-3 card-dark img">
+	<img alt="image small card 100 px" class="small-img" src="https://picsum.photos/200" height="200px" width="200px" />
+</div>
+
+<div class="card m-5 p-3 card-dark img2">
+	<img alt="image small card 100 px" class="small-img" src="https://picsum.photos/200" height="200px" width="200px" />
+	<a href="https://picsum.photos/200" rel="external">Link</a>
+	<br>
+	<button class="btn-">Click me!</button>
+</div>
+
+<div class="card m-5 p-3 card-dark">
+	<a href="https://picsum.photos/200" class="btnsecondary">Link</a>
+	<br>
+	<a href="https://picsum.photos/200" class="btn btn-secondary">Link</a>
+	<br>
+	<a href="https://picsum.photos/200" class="secondarybtn">Link</a>
+</div>
+
+<div class="card m-5 p-3 card-dark">
+	<p class="big-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, necessitatibus. Adipisci amet
+		sint corporis
+		inventore molestias quibusdam quasi quidem quod error facere rem tempora officiis magni ex ipsam incidunt, dolor
+		rerum omnis beatae! At iure unde, ea eaque est quos? Porro perferendis magni quia aliquid laborum, at numquam,
+		quaerat quis assumenda rerum odio tempora error libero, veniam fugit suscipit? Molestias.
+	</p>
+	<div>
+		<div>
+			<input type="text" class="input-dark p-1" placeholder="Введите инфу">
+			<input type="text" class="input-dark p-1" placeholder="Введите инфу">
+			<input type="text" class="input-dark p-1" placeholder="Введите инфу">
+			<input type="text" class="input-dark p-1" placeholder="Введите инфу">
+			<input type="text" class="input-dark p-1" placeholder="Введите инфу">
+			<input type="text" class="input-dark p-1" placeholder="Введите инфу">
+			<input type="text" class="input-dark p-1" placeholder="Введите инфу">
+			<input type="text" class="input-dark p-1" placeholder="Введите инфу">
+			<input type="text" class="input-dark p-1" placeholder="Введите инфу">
+		</div>
+	</div>
+</div> --}}
+
+{{!-- --------------------------- Lesson 4 Селекторы 4 ---------------------------- --}}
+<div class="card m-5 p-3 card-dark">
+	<a href="#test">Ссылка на якорь</a>
+</div>
+
+<div id="test" class="card m-5 p-3 card-dark">
+	Якорь!!!
+</div>
+
+<div class="card m-5 p-3 card-dark">
+	<a class="mylink" href="https://fast.com/" target="_blank">google</a>
+</div>
+
+<div class="card m-5 p-3 card-dark">
+	<input type="text">
+</div>
+
+<div lang="en" class="card m-5 p-3 card-dark">
+	<span>Hello world!</span>
+	<input type="text" placeholder="english">
+</div>
+<div lang="fr" class="card m-5 p-3 card-dark">
+	<span>Bonjour!</span>
+	<input type="text" placeholder="franch">
+</div>
+
+<div class="m-5 p-3 card-dark text-center">
+	<button>Enabled button</button><br><br>
+	<button disabled>Disabed button</button>
+</div>
+
+<div class="m-5 p-3 card-dark text-center">
+	<input class="inp" type="text">
+	<input class="inp" type="text" readonly>
+</div>
+
+<div class="m-5 p-3 card-dark">
+	<div>
+		<input type="checkbox">
+		<span>First chekbox</span>
+	</div>
+	<div>
+		<input type="checkbox">
+		<span>Second chekbox</span>
+	</div>
+	<div>
+		<input type="checkbox">
+		<span>Third chekbox</span>
+	</div>
+	<div>
+		<input type="checkbox" disabled checked>
+		<span>Fourth chekbox</span>
+	</div>
+</div>
+
+<div class="m-5 p-3 card-dark text-center">
+	<span>Mail:</span>
+	<input class="valid" type="email" required>
+	<input class="valid" type="number">
+	<span>-number (optional)</span>
+</div>
+
+<div class="m-5 p-3 card-dark">
+	<div>
+		<input class="number" type="number" step="5" min="20" max="40" required>
+		<span>-number (required, 20-40)</span>
+	</div>
+	<div class="mt-2">
+		<input class="mytext" type="text" placeholder="Write letters">
+		<span>-атрибут наличия плейсхолдера, пока текст не введен, текст красный</span>
+	</div>
+</div>
+
+<footer class="p-5">
+	<hr>
+	<p>
+		Это футер
+	</p>
+</footer>

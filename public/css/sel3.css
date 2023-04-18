@@ -1,0 +1,61 @@
+.card-dark {
+  background: rgb(238, 238, 238);
+}
+
+/* ---------------------------  Lesson 3  Селекторы 3  ---------------------------- */
+
+.input-dark {
+  background: rgb(160, 161, 161);
+}
+
+.input-dark[required] {
+  background: rgb(253, 120, 209);
+}
+
+.input-dark[type="number"] {
+  background: rgb(156, 233, 137);
+}
+
+.small-img[alt~="small"] {
+  height: 250px;
+}
+
+.card.img {
+  height: 350px;
+}
+
+.card[class~="img2"] {
+  height: 350px;
+}
+
+a[rel~="external"] {
+  color: rgb(252, 103, 128);
+}
+
+button[class|="btn"] {
+  background: lightblue;
+}
+
+a[class$="btn"] {
+  color:chartreuse;
+  background: rgb(4, 93, 122);
+}
+
+.btn::first-letter {
+  color: red;
+}
+
+.big-text::first-line {
+  color: rgb(236, 9, 58);
+}
+
+.input-dark::placeholder {
+  color:darkmagenta;
+}
+
+.big-text::before,
+.big-text::after {
+  content: "$$$ ";
+  color:rgb(10, 175, 74);
+  background:rgb(156, 233, 137)
+}
