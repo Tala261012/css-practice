@@ -6,10 +6,12 @@
 .page_content {
 	max-width: 960px;
 	margin: 0 auto;
+	font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .header{
-	padding: 24px;;
+	padding: 24px;
+	border-bottom: 1px solid #dee2e6;
 }
 
 .logo {
@@ -60,6 +62,7 @@
 
 .footer {
 	padding: 24px 0;
+	border-top: 1px solid #dee2e6;
 }
 
 .footer_copyright {
@@ -88,8 +91,9 @@
 	font-size: 20px;
 	color: #212529;
 	text-align: center;
-	max-width: 585px;
+	/* max-width: 585px; */
 	margin: 0 auto;
+	line-height: 160%;
 }
 
 .plans_card:not(:last-of-type) {
@@ -113,8 +117,9 @@
 }
 
 .card_price_duration {
-	font-size: 29px;
+	font-size: 20px;
 	color: #6c757d;
+	vertical-align: 12px;
 }
 
 .card_block {
@@ -140,4 +145,45 @@
 	width: 100%;
 	font-size: 19px;
 	padding: 9px;
+}
+
+.card {
+	border: 2px solid blue;
+	border-radius:0 30px;
+	box-shadow: 10px 10px 25px 0px rgba(0, 0, 255, 0.534);
+}
+
+.card:hover {
+	/* outline: 2px solid blue; */
+	outline-offset: 5px;
+	box-shadow: 10px 10px 25px 0px rgba(0, 0, 255, 1);
+	cursor: crosshair;
+}
+
+.btn {
+	border-radius:25px;
+}
+
+.btn:hover {
+	box-shadow: 10px 10px 25px 0px rgba(0, 0, 255, 0.445);
+}
+
+h1 {
+	text-shadow: 0px 0px 8px rgba(0, 0, 255, 0.651);
+}
+
+.plans_card:nth-child(2) {
+	background-color: rgb(255, 230, 201);
+	/* display: none; */
+	/* visibility: collapse; */
+}
+
+p {
+	background-color: rgb(224, 234, 255);
+	max-width: 800px;
+	width: 300px;
+	max-height: 800px;
+	height: 150px;
+	overflow: auto;
+	resize: horizontal;
 }

@@ -108,3 +108,43 @@
 	min-width: 200px;
 	
 }
+
+/* ------------------------- Урок-словарь Новые свойства ------------------------- */
+
+.mytest1 {
+	background-color: rgb(245, 239, 220);
+	padding: 10px;
+	text-align: justify;
+	text-justify: none;
+	text-indent: 10% hanging;
+}
+.mytest2 {
+	background-color: rgb(212, 250, 204);
+	padding: 10px;
+	text-align: justify;
+	text-justify: inter-word;
+	text-decoration-skip-ink: auto;
+}
+.mytest3 {
+	background-color: rgb(201, 202, 247);
+	padding: 10px;
+	text-align: justify;
+	text-justify: inter-character;
+	text-decoration-skip-ink: all;
+}
+.mytest1 > span {
+	font-size: 30px;
+	text-decoration: underline solid red;
+	text-decoration-skip-ink: none;
+}
+.mytest2 > span {
+	font-size: 30px;
+	text-decoration: underline solid red;
+	text-decoration-skip-ink: auto;
+}
+.mytest3 > span {
+	font-size: 30px;
+	text-decoration: underline solid red;
+	text-decoration-skip-ink: all;
+}
+
