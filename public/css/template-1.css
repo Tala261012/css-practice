@@ -1,3 +1,8 @@
+:root {
+	--textcolor: green;
+	--spacemedium: 48px;
+}
+
 .page {
 	background: #ffffff;
 	padding: 0 15px;
@@ -10,7 +15,7 @@
 }
 
 .header{
-	padding: 24px;
+	padding: var(--spacemedium);
 	border-bottom: 1px solid #dee2e6;
 }
 
@@ -44,7 +49,7 @@
 }
 
 .nav_inline > .nav_link:not(:last-child) {
-	margin-right: 24px;
+	margin-right: var(--spacemedium);
 }
 
 .nav_vertical > .nav_link:not(:last-child) {
@@ -61,7 +66,7 @@
 }
 
 .footer {
-	padding: 24px 0;
+	padding: var(--spacemedium) 0;
 	border-top: 1px solid #dee2e6;
 }
 
@@ -74,14 +79,14 @@
 
 .footer_title {
 	font-size: 20px;
-	color: #212529;
+	color: var(--textcolor, #212529);
 	display: block;
 	margin-bottom: 12px;
 }
 
 .hero_title {
 	font-size: 56px;
-	color: #212529;
+	color: var(--textcolor, #212529);
 	font-weight: 500;
 	margin-bottom: 12px;
 	text-align: center;
@@ -89,7 +94,7 @@
 
 .hero_text {
 	font-size: 20px;
-	color: #212529;
+	color: var(--textcolor, #212529);
 	text-align: center;
 	/* max-width: 585px; */
 	margin: 0 auto;
@@ -97,23 +102,23 @@
 }
 
 .plans_card:not(:last-of-type) {
-	margin-right: 24px;
+	margin-right: var(--spacemedium);
 }
 
 .card-header {
 	padding: 12px;
 	text-align: center;
-	font-size: 24px;
-	color: #212529;
+	font-size: var(--spacemedium);
+	color: var(--textcolor, #212529);
 }
 
 .card-body {
-	padding: 24px;
+	padding: var(--spacemedium);
 }
 
 .card_price_amount {
 	font-size: 40px;
-	color: #212529;
+	color: var(--textcolor, #212529);
 }
 
 .card_price_duration {
@@ -124,16 +129,19 @@
 
 .card_block {
 	text-align: center;
+	/* list-style-type: upper-alpha; */
+	list-style-position: inside;
+	list-style-image: url('/fav/favicon-16x16.png');
 }
 
 .card_block:not(:last-of-type) {
-	margin-bottom: 24px;
+	margin-bottom: var(--spacemedium);
 }
 
 .card_description_item {
 	font-size: 16px;
-	color: #212529;
-	display: block;
+	color: var(--textcolor, #212529);
+	display: list-item;
 }
 
 .card_description_item:not(:last-of-type) {
@@ -151,6 +159,7 @@
 	border: 2px solid blue;
 	border-radius:0 30px;
 	box-shadow: 10px 10px 25px 0px rgba(0, 0, 255, 0.534);
+	opacity: 50%;
 }
 
 .card:hover {
@@ -158,6 +167,7 @@
 	outline-offset: 5px;
 	box-shadow: 10px 10px 25px 0px rgba(0, 0, 255, 1);
 	cursor: crosshair;
+	opacity: 100%;
 }
 
 .btn {
@@ -173,9 +183,9 @@ h1 {
 }
 
 .plans_card:nth-child(2) {
-	background-color: rgb(255, 230, 201);
+	/* background-color: rgb(255, 230, 201); */
 	/* display: none; */
-	/* visibility: collapse; */
+	visibility: collapse;
 }
 
 p {
@@ -185,5 +195,85 @@ p {
 	max-height: 800px;
 	height: 150px;
 	overflow: auto;
-	resize: horizontal;
+	resize: both;
+}
+
+.hero_text{
+	/* background-image: url(/img/photo2.jpg); */
+	/* background-attachment: local; */
+	height: 300px;
+	width: 300px;
+	overflow: auto;
+	background-color: transparent;
+	border-image-source: url(/img/photo.jpg);
+	/* border-image-source: url(/img/circle-1.png); */
+	border-image-width: 5% 10%;
+	border-image-slice: 5% 10%;
+	border-image-repeat: space;
+}
+
+.page {
+	background-color: rgba(255, 255, 255, 0.568);
+}
+
+body{
+	/* background-image: conic-gradient(from 0deg at center, white 0%, yellow 25%, red 50%); */
+	/* background-image: url(/img/circle-1.png); */
+	background-repeat: no-repeat;
+	background-image: url(/img/photo2.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/* .table tr {
+	border: 1px solid #343a40;
+} */
+
+.table tr td {
+	border: 1px solid #590364;
+	border-bottom-color: red;
+	border-right-color: green;
+}
+
+.table {
+	table-layout: fixed;
+	width: 600px;
+	border-collapse: unset;
+	border-spacing: 10px;
+	caption-side: top;
+	empty-cells: hide;
+}
+
+/* .nav_link::before {
+	content: open-quote;
+}
+
+.nav_link::after {
+	content: close-quote;
+} */
+
+/* -----Интересная фмшка!----- */
+/* !!!тут мы, науконец, можем вставить картинку так, чтоб, независимо от ее исходного размера, 
+она впихивалась в 10х10!!! */
+.nav_link::before, 
+.nav_link::after {
+	content: '';
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background-image: url('/img/circle-1.png');
+}
+
+.nav_link::before {
+	margin-right: 10px;
+}
+
+.nav_link::after {
+	margin-left: 10px;
+}
+
+.calc {
+	width: 600px;
+	margin-left: calc(50% - (600px/2));
 }

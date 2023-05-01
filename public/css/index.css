@@ -148,3 +148,19 @@
 	text-decoration-skip-ink: all;
 }
 
+/* ------------------------- Урок-опять-словарь Новые свойства ------------------------- */
+
+.colonki {
+	column-count: 3;
+	column-width: 200px;
+	column-gap: 40px;
+	column-rule-width: 14px;
+	column-rule-color: red;
+}
+
+.spanner {
+	display: block;
+	column-span: all;
+	color: blue;
+	font-weight: 900;
+}
