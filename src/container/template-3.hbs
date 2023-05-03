@@ -28,8 +28,8 @@
 
 <div class="modal">
 	{{hero.text}} {{hero.text}}
-	<img src="{{hero.photo}}" alt="Hero image" class="modal_image">
-	<div class="modal_text">{{hero.text}} {{hero.text}} {{hero.text}} {{hero.text}} </div>
+	{{!-- <img src="{{hero.photo}}" alt="Hero image" class="modal_image"> --}}
+	<div class="modal_text">{{hero.text}} {{hero.text}}</div>
 </div>
 
 <main class="blog">
@@ -39,6 +39,18 @@
 
 	{{/each}}
 </main>
+
+<div class="blog">
+	{{#each blog}}
+	{{> cardBlog data=this}}
+	{{/each}}
+</div>
+
+<div class="blog">
+	{{#each blog}}
+	{{> cardBlog data=this}}
+	{{/each}}
+</div>
 
 {{#with form}}
 <div class="form">
