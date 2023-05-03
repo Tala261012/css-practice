@@ -234,7 +234,7 @@
 	background-color: var(--color-primary);
 	padding: var(--space-l);
 	border-radius: var(--border-radius);
-	/* gap: var(--space-xm); */
+	gap: var(--space-xm);
 }
 
 .form_action {
