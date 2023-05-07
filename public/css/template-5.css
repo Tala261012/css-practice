@@ -77,7 +77,7 @@
 
 	width: 24px;
 	height: 24px;
-	border-radius-def: calc(var(--border-radius-def) / 2);
+	border-radius: calc(var(--border-radius-def) / 2);
 
 	display: flex;
 	justify-content: center;
