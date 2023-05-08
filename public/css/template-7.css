@@ -61,6 +61,7 @@ header {
 	position: sticky;
 	top: 0px;
 	left: 0px;
+	z-index: 1;
 	width: 100%;
 	max-width: var(--page-width);
 	background-color: var(--page-color);
