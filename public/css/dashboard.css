@@ -3,8 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 body {
-	
-	background-color: var(--color-white);
+		background-color: var(--color-white);
 }
 
 :root {
@@ -143,7 +142,8 @@ body {
 		border: 1px solid var(--color-light);
 		padding: 0  var(--spacing-2);
 		border-radius: var(--radius-1);
-		width: 188px;
+		min-width: 188px;
+		width: 100%;
 	}
 
 	.box {
@@ -335,6 +335,16 @@ body {
 		top: calc(50% - 12px / 2);
 		left: calc(100% - 18px);
 	}
+
+	.purchase__container {
+		container-type: inline-size;
+		container-name: purchase;
+	}
+
+	.analytic__container {
+		container-type: inline-size;
+		container-name: analytic;
+	}
 }
 
 @layer mod {
@@ -467,6 +477,46 @@ body {
 }
 
 @layer adaptive {
+	
+	@container purchase (width < 680px) {
+		.purchase-item {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	@container purchase (width < 360px) {
+		.purchase-item {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	@container analytic (width < 700px) {
+		.analytic__block {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	@container analytic (width < 470px) {
+		.analytic__block {
+			grid-template-columns: 1fr;
+		}
+
+		.analytic--double {
+			grid-row: auto;
+		}
+	}
+
+	@media all and (1000px < width <= 1100px) {
+		.payment-block {
+			grid-template-columns: 1fr;
+		}
+		
+		.main2__block {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+	
+	
 	@media all and (width <= 1000px) {
 		.page--dashboard {
 			grid-template-columns: 1fr;
@@ -481,12 +531,30 @@ body {
 		}
 	}
 
-	@media all and (width < 600px) {
-		
+	@media all and (width < 760px) {
+		.payment-block {
+			grid-template-columns: 1fr;
+		}
+
+		.main2__block {
+			grid-template-columns: 1fr 1fr;
+		}
 	}
 
-	@media all and (width < 400px) {
-		
+	@media all and (width < 570px) {
+		.main2__block {
+			grid-template-columns: 1fr;
+		}
+
+		.page {
+			height: 100%;
+		}
+	}
+
+	@media all and (width < 340px) {
+		.analytic__title {
+			font-size: var(--size-3);
+		}
 	}
 
 }
